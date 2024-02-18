@@ -1,0 +1,134 @@
+/*import React, { Component, useState } from "react";
+import img2 from '../ressources/images/img2.jpg'
+
+export default function SignUp(props) {
+  const [fname, setFname] = useState("");
+  const [lname, setLname] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [userType, setUserType] = useState("");
+  const [secretKey, setSecretKey] = useState("");
+
+//Mine 
+  const [name, setName] = useState('');
+  const [type, setType] = useState('');
+  const [mail, setMail] = useState('');
+  const [pwd, setPwd] = useState('');
+  const [city, setCity] = useState('');
+  const [culture, setCulture] = useState('');
+  const [tel, setTel] = useState('');
+  const [tel2, setTel2] = useState('');
+
+  ////////////////
+
+  const handleSubmit = (e) => {
+    if (userType == "Admin" && secretKey != "AdarshT") {
+      e.preventDefault();
+      alert("Invalid Admin");
+    } else {
+      e.preventDefault();
+
+      fetch("http://localhost:5000/register", {
+        method: "POST",
+        crossDomain: true,
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+          "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify({
+          name,
+          type,
+          mail,
+          pwd,
+          city,
+          culture,
+          tel,
+          tel2 
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data, "userRegister");
+          if (data.status == "ok") {
+            alert("Registration Successful");
+          } else {
+            alert("Something went wrong");
+          }
+        });
+    }
+  };
+
+  return (
+<div className="signUpContainer">
+    <div className="signUpLeft">
+                <div className="signUpLeftBtn">
+                    <button onClick={()=>{props.handleHaveAcount()}}>Se connecter</button>
+                    <button> S'inscrire</button>
+                </div>
+                <div className="signUpLeftImage">
+                    <img src={img2} alt=''/>
+                </div>
+            </div>
+            <div className="signUpRight">
+            <h3 className='signTitle'>S'inscrire</h3>
+                <form className='signUpRightContainer' onSubmit={handleSubmit}>
+                        <label htmlFor="name" className='spacingLabel'>
+                            Nom et prenom(s)
+                        </label>
+                        <input type="text" name="name" id="name" value={name} onChange={(e) => setName(e.target.value)}/>
+                        <span id='Iam'>Je suis</span>
+                        <div className='signUpRightRadio'>
+                                <input type="radio" id='producteur' name='producteur' value={'producteur'}/>
+                                <label htmlFor="producteur">Producteur</label>
+                                <input type="radio" id='particulier' value={'particulier'}/>
+                                <label htmlFor="particulier">Particulier</label>
+                        </div>
+                        <label htmlFor="mail" className='spacingLabel'>
+                                Adresse Email
+                        </label>
+                        <input type="email" name="mail" id="mail" value={mail} onChange={(e) => setMail(e.target.value)}/>
+                        <label htmlFor="pwd" className='spacingLabel'>
+                                Mot de passe
+                        </label>
+                        <input type="password" name="pwd" id="pwd" value={pwd} onChange={(e) => setPwd(e.target.value)}/>
+        
+                        <button className="Btn"  >
+                            Suivant
+                        </button>
+                        <span className='blueSpan'>
+                            Déjà inscrit ? Se connecter
+                        </span>
+                        <label htmlFor="city" className='spacingLabel'>
+                        Ville/Région
+                    </label>
+                    <input type="text" name="city" id="city" value={city} onChange={(e) => setCity(e.target.value)}/>
+                    <label htmlFor="culture" className='spacingLabel'>
+                            Culture produite
+                    </label>
+                    <select name="culture" id="culture" value={culture} onChange={(e) => setCulture(e.target.value)}>
+                        <optgroup>
+                            <option value="1">Manioc</option>
+                            <option value="2">Igname</option>
+                            <option value="3">Arachide</option>
+                        </optgroup>
+                    </select>
+                    <label htmlFor="tel" className='spacingLabel' >
+                            Numero de téléphone
+                    </label>
+                    <input type='tel' name="tel" id="tel" value={tel} onChange={(e) => setTel(e.target.value)}/>
+
+                    <label htmlFor="tel2" className='spacingLabel'>
+                            Numero de téléphone
+                    </label>
+                    <input type='tel' name="tel2" id="tel2" value={tel2} onChange={(e) => setTel2(e.target.value)}/>
+                   
+                    <input type="submit" className="Btn" id='nextButton' value={"S'inscrire"}/>
+                    <span className='blueSpan'>
+                        Déjà inscrit ? Se connecter
+                    </span>
+                </form>
+            </div>
+    </div>
+  );
+}

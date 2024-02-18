@@ -1,0 +1,88 @@
+{
+    "produitsVivriers": [
+    {
+        "nom": "Ail",
+        "prixDeBase": 400,
+        "info":"L'ail est un ingrédient clé dans la préparation de nombreuses sauces ivoiriennes. Il peut être mélangé avec d'autres ingrédients tels que l'oignon, le gingembre et les épices pour créer des condiments savoureux. Dans certains plats traditionnels ivoiriens tels que l'attiéké (un plat à base de semoule de manioc fermentée) ou l'alloco (bananes plantains frites), l'ail peut être ajouté pour rehausser la saveur."
+    },
+    {
+        "nom": "Arachide",
+        "prixDeBase": 1000,
+        "info":" Les arachides sont une excellente source de protéines végétales. Elles contiennent tous les acides aminés essentiels nécessaires à la construction et à la réparation des tissus corporels."
+      },
+      {
+        "nom": "Aubergine",
+        "prixDeBase": 1000,
+        "info":"Sauce Aubergine : Les aubergines peuvent être utilisées pour préparer des sauces, souvent en combinaison avec d'autres légumes, des tomates, des oignons et des épices. Cette sauce peut accompagner du riz, des pâtes ou d'autres céréales."
+      },
+      {
+        "nom": "Banane plantain",
+        "prixDeBase": 1200,
+        "info":"Les bananes plantains sont souvent coupées en tranches ou en bâtonnets et frites jusqu'à ce qu'elles soient dorées et croustillantes appellés Alloco. Les frites de banane plantain sont un accompagnement populaire pour de nombreux plats ivoiriens."
+      },
+      {
+        "nom": "Carote",
+        "prixDeBase": 1000,
+        "info":"Voici quelques façons courantes dont les carottes sont utilisées dans la cuisine ivoirienne : Sauces et Ragoûts : Les carottes sont souvent incluses dans la préparation de sauces et de ragoûts. Elles peuvent être coupées en rondelles ou en dés et ajoutées à des plats de viande ou de poisson pour enrichir la texture et la saveur."
+
+      },
+      
+      {
+        "nom": "Gombo",
+        "prixDeBase": 1200,
+        "info":"La préparation la plus emblématique est la << sauce gombo >>. Les gousses de gombo sont coupées en rondelles et cuites dans une sauce souvent composée de tomates, d'oignons, d'huile de palme, de poisson ou de viande. Cette sauce est généralement servie avec du riz ou d'autres céréales."
+      },
+      {
+        "nom": "Igname",
+        "prixDeBase": 1200,
+        "info":"L'igname peut être pelé, coupé en morceaux, puis bouilli jusqu'à ce qu'il soit tendre. Il est souvent consommé tel quel ou écrasé pour former une bouillie. Cette bouillie peut être accompagnée de sauces ou de ragoûts à base de légumes, de viande ou de poisson."
+      },
+      {
+        "nom": "Mais",
+        "prixDeBase": 500,
+        "info":" Le maïs est souvent consommé sous forme de bouillie ou de gruau. La farine de maïs est mélangée avec de l'eau et cuite pour créer une bouillie épaisse, généralement consommée au petit déjeuner ou comme repas d'accompagnement."
+      },
+      {
+        "nom": "Manioc",
+        "prixDeBase": 500,
+        "info":"L'attiéké est un plat populaire en Côte d'Ivoire préparé à partir de manioc fermenté. Le manioc est pelé, râpé, fermenté et séché pour créer de petites granules qui sont ensuite cuites à la vapeur. L'attiéké est souvent consommé avec du poisson, de la viande ou des sauces."
+      },
+     
+      {
+        "nom": "Oignon",
+        "prixDeBase": 500,
+        "info":"L'oignon est un ingrédient essentiel dans la cuisine ivoirienne, apportant une saveur caractéristique à de nombreux plats."
+      },
+      {
+        "nom": "Noix de coco",
+        "prixDeBase": 500,
+        "info":"La pulpe de noix de coco peut être râpée et utilisée dans une variété de plats. Elle est souvent ajoutée aux desserts, aux salades, aux sauces, et même aux plats traditionnels pour ajouter une texture et une saveur caractéristique."
+      },
+    
+      {
+        "nom": "Patate douce",
+        "prixDeBase": 500,
+        "info":"Les patates douces peuvent être coupées en bâtonnets et frites pour créer une alternative saine aux frites de pommes de terre. Les frites de patate douce sont souvent consommées comme collation ou accompagnement."
+      },
+      {
+        "nom": "Piment",
+        "prixDeBase": 500,
+        "info":"Le piment est utilisé comme assaisonnement pour relever la saveur de nombreux plats. Il peut être ajouté aux marinades, aux ragoûts, aux soupes et aux sauces pour donner une touche épicée."
+      },
+
+      {
+        "nom": "Taro",
+        "prixDeBase": 800,
+        "info":"Le taro peut être grillé sur des braises pour donner une saveur fumée. Il est parfois servi avec des condiments ou des sauces pour plus de saveur."
+      },
+     
+      
+      {
+        "nom": "Tomate",
+        "prixDeBase": 1500,
+        "info":"Les tomates sont souvent utilisées comme base pour préparer des sauces. Ces sauces peuvent accompagner une variété de plats, y compris le riz, les pâtes, les viandes et le poisson. La sauce tomate est un élément de base dans de nombreux plats ivoiriens."
+      }
+      
+    ]
+  }
+  

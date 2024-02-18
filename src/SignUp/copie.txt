@@ -1,0 +1,113 @@
+import img2 from '../ressources/images/img2.jpg'
+import React, { Component } from 'react'
+
+export default class SignUp extends Component {
+constructor(props) {
+  super(props)
+
+  this.state = {
+     nextBtn:false
+  }
+}
+
+    nextClick=()=>{
+            this.setState({nextBtn:true});
+    }
+
+  render() {
+    return !this.state.nextBtn ? 
+    ( 
+    <div className="signUpContainer">
+            <div className="signUpLeft">
+                <div className="signUpLeftBtn">
+                    <button onClick={()=>{this.props.handleHaveAcount()}}>Se connecter</button>
+                    <button> S'inscrire</button>
+                </div>
+                <div className="signUpLeftImage">
+                    <img src={img2} alt=''/>
+                </div>
+            </div>
+            <div className="signUpRight">
+                <h3 className='signTitle'>S'inscrire</h3>
+                <form className='signUpRightContainer'>
+                        <label htmlFor="name" className='spacingLabel'>
+                            Nom et prenom(s)
+                        </label>
+                        <input type="text" name="name" id="name"/>
+                        <span id='Iam'>Je suis</span>
+                        <div className='signUpRightRadio'>
+                                <input type="radio" id='producteur' name='producteur' value={'producteur'}/>
+                                <label htmlFor="producteur">Producteur</label>
+                                <input type="radio" id='particulier' value={'particulier'}/>
+                                <label htmlFor="particulier">Particulier</label>
+                        </div>
+                        <label htmlFor="mail" className='spacingLabel'>
+                                Adresse Email
+                        </label>
+                        <input type="email" name="mail" id="mail"/>
+                        <label htmlFor="pwd" className='spacingLabel'>
+                                Mot de passe
+                        </label>
+                        <input type="password" name="pwd" id="pwd"/>
+        
+                        <button className="Btn" id='nextButton' onClick={this.nextClick} >
+                            Suivant
+                        </button>
+                        <span className='blueSpan'>
+                            Déjà inscrit ? Se connecter
+                        </span>
+                </form>
+                
+            </div>
+        </div>
+       
+    ):(
+        <div className="signUpContainer">
+        <div className="signUpLeft">
+            <div className="signUpLeftBtn">
+                <button onClick={()=>{this.props.handleHaveAcount()}}>Se connecter</button>
+                <button> S'inscrire</button>
+            </div>
+            <div className="signUpLeftImage">
+                <img src={img2} alt=''/>
+            </div>
+        </div>
+        <div className="signUpRight">
+            <h3 className='signTitle'>S'inscrire</h3>
+            <form className='signUpRightContainer'>
+                    <label htmlFor="city" className='spacingLabel'>
+                        Ville/Région
+                    </label>
+                    <input type="text" name="city" id="city"/>
+                    <label htmlFor="culture" className='spacingLabel'>
+                            Culture produite
+                    </label>
+                    <select name="culture" id="culture">
+                        <optgroup>
+                            <option value="1">Manioc</option>
+                            <option value="2">Igname</option>
+                            <option value="3">Arachide</option>
+                        </optgroup>
+                    </select>
+                    <label htmlFor="tel" className='spacingLabel'>
+                            Numero de téléphone
+                    </label>
+                    <input type='tel' name="tel" id="tel"/>
+
+                    <label htmlFor="tel2" className='spacingLabel'>
+                            Numero de téléphone
+                    </label>
+                    <input type='tel' name="tel2" id="tel2"/>
+                   
+                    <input type="submit" className="Btn" id='nextButton' value={"S'inscrire"}/>
+                    <span className='blueSpan'>
+                        Déjà inscrit ? Se connecter
+                    </span>
+            </form>
+            
+        </div>
+    </div>
+    )
+    
+  }
+}
